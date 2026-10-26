@@ -1,4 +1,4 @@
-import { Input, PercentageButton } from "../components";
+import { Input, PercentageButton, Totals } from "../components";
 
 const Calculator = () => {
   const percents: number[] = [5, 10, 15, 25, 50];
@@ -18,6 +18,7 @@ const Calculator = () => {
         label="Number of People"
         value={0}
       />
+      <Totals />
     </div>
   );
 };
