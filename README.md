@@ -1,78 +1,53 @@
-# React + TypeScript + Vite
+# Tip Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive tip calculator web application built with React, TypeScript, and Tailwind CSS to seamlessly calculate tips and split bills per person.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+- **Accurate Calculations**: Computes tip amounts and total cost per person in real time.
+- **Responsive Design**: Fully adaptive layout optimized for mobile, tablet, and desktop viewports.
+- **Interactive UI**: Polished user experience with custom button states, smooth hover effects, and state management.
+- **Robust Typing**: Built entirely with TypeScript for high type safety, maintainability, and code scalability.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend**: React, TypeScript, Tailwind CSS
+- **State Management**: Zustand
+- **Build Tool**: Vite
+- **Package Manager**: Bun / npm
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📦 Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+To get a local copy up and running, follow these simple steps:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Prerequisites
 
-```
+Make sure you have [Bun](https://bun.sh/) or Node.js installed on your machine.
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+### Installation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/EstebanPastor/Tip-Calculator.git](https://github.com/EstebanPastor/Tip-Calculator.git)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Navigate to the project directory:
 
-```
+Bash
+cd Tip-Calculator
+Install dependencies:
+
+Bash
+bun install
+# or npm install
+Run the development server:
+
+Bash
+bun run dev
+# or npm run dev
+Open your browser and access http://localhost:5173.
