@@ -10,7 +10,7 @@ const PercentageButton = ({ percent, isCustom = false }: Props) => {
 
   return (
     <button
-      className={`text-2xl font-bold rounded-[5px] w-full h-12 cursor-pointer ${styles}`}
+      className={`transition-colors text-2xl font-bold rounded-[5px] w-full h-12 cursor-pointer ${styles}`}
     >
       {isCustom ? "Custom" : `${percent}%`}
     </button>

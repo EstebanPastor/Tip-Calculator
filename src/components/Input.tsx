@@ -16,7 +16,7 @@ const Input = ({ label, value, iconUrl }: Props) => {
       <div className="relative">
         <input
           id="bill"
-          className="bg-gray-50 rounded-[5px] focus:outline-1 focus:outline-Green-400 cursor-pointer h-12 text-right pr-4 text-2xl font-bold text-Green-900"
+          className="bg-gray-50 rounded-[5px] focus:outline-1 focus:outline-Green-400 cursor-pointer h-12 text-right pr-4 text-2xl font-bold text-Green-900 w-full"
           type="text"
           value={value}
         />
