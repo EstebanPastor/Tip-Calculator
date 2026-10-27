@@ -26,7 +26,7 @@ const Input = ({ label, value, iconUrl, variant, setValue }: Props) => {
 
     setLocalValue(userInput);
 
-    if (userInput === "0") {
+    if (userInput === "0" || userInput.trim() === "") {
       setError(true);
     } else {
       setError(false);
@@ -45,7 +45,7 @@ const Input = ({ label, value, iconUrl, variant, setValue }: Props) => {
       <div className="relative">
         <input
           id="bill"
-          className={`bg-gray-50 rounded-[5px] focus:outline-1 focus:outline-Green-400 cursor-pointer h-12 ${error ? 'focus:outline-Orange-400' : 'focus:outline-Green-400' } text-right pr-4 text-2xl font-bold text-Green-900 w-full`}
+          className={`bg-gray-50 rounded-[5px] focus:outline-1 focus:outline-Green-400 cursor-pointer h-12 ${error ? "focus:outline-Orange-400" : "focus:outline-Green-400"} text-right pr-4 text-2xl font-bold text-Green-900 w-full`}
           type="text"
           onChange={handleValueChange}
           value={localValue}

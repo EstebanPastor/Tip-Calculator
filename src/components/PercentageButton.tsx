@@ -20,6 +20,7 @@ const PercentageButton = ({ percent, isCustom = false }: Props) => {
       onClick={handleClick}
     >
       {isCustom ? "Custom" : `${percent}%`}
+      
     </button>
   );
 };

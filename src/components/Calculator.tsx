@@ -1,4 +1,4 @@
-import { Input, PercentageButton, Totals } from "../components";
+import { Input, PercentageButton, Totals, CustomButton } from "../components";
 import { useCalculatoreStore } from "../store/Calculator.store";
 
 const Calculator = () => {
@@ -21,7 +21,7 @@ const Calculator = () => {
           {percents.map((percent: number) => (
             <PercentageButton key={percent} percent={percent} />
           ))}
-          <PercentageButton isCustom percent={0} />
+          <CustomButton />
         </div>
         <Input
           variant="people"
